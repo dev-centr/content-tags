@@ -46,7 +46,7 @@ importers:
   packages/astro:
     dependencies:
       '@content-tags/core':
-        specifier: workspace:*
+        specifier: 0.1.0
         version: link:../core
     devDependencies:
       typescript:
@@ -65,10 +65,10 @@ importers:
   packages/next:
     dependencies:
       '@content-tags/core':
-        specifier: workspace:*
+        specifier: 0.1.0
         version: link:../core
       '@content-tags/react':
-        specifier: workspace:*
+        specifier: 0.1.0
         version: link:../react
     devDependencies:
       typescript:
@@ -78,7 +78,7 @@ importers:
   packages/react:
     dependencies:
       '@content-tags/core':
-        specifier: workspace:*
+        specifier: 0.1.0
         version: link:../core
     devDependencies:
       '@types/react':
@@ -94,7 +94,7 @@ importers:
   packages/solid:
     dependencies:
       '@content-tags/core':
-        specifier: workspace:*
+        specifier: 0.1.0
         version: link:../core
     devDependencies:
       solid-js:

@@ -12,6 +12,7 @@
 !CHANGELOG.md
 !LICENSE
 !package.json
+!.npmrc
 !pnpm-workspace.yaml
 !pnpm-lock.yaml
 !tsconfig.base.json

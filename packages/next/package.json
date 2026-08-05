@@ -19,8 +19,8 @@
                     "build":  "tsc -p tsconfig.json"
                 },
     "dependencies":  {
-                         "@content-tags/core":  "workspace:*",
-                         "@content-tags/react":  "workspace:*"
+                         "@content-tags/core":  "0.1.0",
+                         "@content-tags/react":  "0.1.0"
                      },
     "devDependencies":  {
                             "typescript":  "^5.0.0"

@@ -81,18 +81,19 @@ export type TagStaticPath = {
 
 /**
  * Paths for Astro `getStaticPaths` on `/tags/[...tag].astro`.
- * Uses `params.tag` as a rest param (string[] when rest, or joined string depending on Astro version).
+ * Astro expects the rest param as a slash-joined string (not string[]).
  */
 export function tagStaticPaths(
   index: TagIndex,
   options: { restParam?: boolean } = {},
 ): TagStaticPath[] {
-  const restParam = options.restParam ?? true;
+  // restParam kept for API compatibility; Astro always wants a joined string.
+  void options.restParam;
   return listAllTagIds(index.byId).map((tagId) => {
     const tag = index.byId.get(tagId)!;
     const parts = tagIdToSlugParts(tagId);
     return {
-      params: { tag: restParam ? parts : parts.join("/") },
+      params: { tag: parts.join("/") },
       props: {
         tagId,
         tag,
