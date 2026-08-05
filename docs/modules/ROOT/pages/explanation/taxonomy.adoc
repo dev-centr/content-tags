@@ -1,0 +1,41 @@
+= Taxonomy model
+:description: How hierarchical content tags are defined and referenced.
+
+== Overview
+
+Sites own a **taxonomy registry** (JSON5). Articles reference tags by stable `id`.
+Free-form invent-per-post tags are rejected at build time when validation is enabled.
+
+== Registry shape
+
+[source,json5]
+----
+{
+  tags: [
+    {
+      id: "microsoft",
+      label: "Microsoft",
+      children: [
+        {
+          id: "microsoft/feedback-hub",
+          label: "Feedback Hub",
+          description: "Product feedback filed via Feedback Hub",
+        },
+      ],
+    },
+    { id: "apis", label: "APIs" },
+  ],
+}
+----
+
+* `id`:: Stable path-like string (`parent/child`). Unique across the tree.
+* `label`:: Human-readable name for UI.
+* `description`:: Optional longer blurb for tag pages.
+* `children`:: Nested tags.
+
+Articles use frontmatter like `tags: ["microsoft/feedback-hub", "apis"]`.
+
+== Indexing
+
+* Tag pages include posts tagged with the node **or any descendant** by default.
+* `/tags` shows the full hierarchy; `/tags/[...tag]` lists matching posts.

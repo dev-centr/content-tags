@@ -1,0 +1,16 @@
+{
+    "name":  "content-tags",
+    "private":  true,
+    "version":  "0.1.0",
+    "description":  "Hierarchical content tags: taxonomy core + Astro/Solid/React/Next adapters",
+    "license":  "MIT",
+    "packageManager":  "pnpm@10.29.1",
+    "scripts":  {
+                    "build":  "pnpm -r run build",
+                    "test":  "pnpm --filter @content-tags/core test",
+                    "demo":  "pnpm --filter @content-tags/demo dev"
+                },
+    "devDependencies":  {
+                            "typescript":  "^5.0.0"
+                        }
+}

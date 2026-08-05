@@ -1,0 +1,28 @@
+{
+    "name":  "@content-tags/next",
+    "version":  "0.1.0",
+    "type":  "module",
+    "description":  "Next.js App Router helpers for content-tags",
+    "license":  "MIT",
+    "main":  "./dist/index.js",
+    "types":  "./dist/index.d.ts",
+    "exports":  {
+                    ".":  {
+                              "types":  "./dist/index.d.ts",
+                              "import":  "./dist/index.js"
+                          }
+                },
+    "files":  [
+                  "dist"
+              ],
+    "scripts":  {
+                    "build":  "tsc -p tsconfig.json"
+                },
+    "dependencies":  {
+                         "@content-tags/core":  "workspace:*",
+                         "@content-tags/react":  "workspace:*"
+                     },
+    "devDependencies":  {
+                            "typescript":  "^5.0.0"
+                        }
+}

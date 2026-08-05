@@ -1,0 +1,23 @@
+*
+!.gitignore
+!.github/
+!.github/**
+!docs/
+!docs/**
+!packages/
+!packages/**
+!demo/
+!demo/**
+!README.md
+!CHANGELOG.md
+!LICENSE
+!package.json
+!pnpm-workspace.yaml
+!pnpm-lock.yaml
+!tsconfig.base.json
+
+# exclusions within allowed trees
+**/node_modules/
+**/dist/
+**/*.tsbuildinfo
+demo/dist/

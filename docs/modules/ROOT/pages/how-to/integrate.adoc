@@ -1,0 +1,36 @@
+= Integrate content-tags
+:description: How to use hierarchical tags in Astro, Solid, React, and Next.js.
+
+== Astro
+
+. Add a taxonomy file (for example `src/content/taxonomy.json5`).
+. Extend the collection schema with `tags: tagsField(z)`.
+. At build time, load taxonomy, map collection entries, call `buildIndexFromCollection`.
+. Add `/tags/index` and `/tags/[...tag]` using `tagStaticPaths(index)`.
+
+[source,ts]
+----
+import { tagsField, buildIndexFromCollection, tagStaticPaths } from "@content-tags/astro";
+----
+
+== Solid / React
+
+Render hierarchy or flat lists:
+
+[source,tsx]
+----
+import { TagTree, TagList } from "@content-tags/solid"; // or @content-tags/react
+----
+
+Pass `nodes={index.roots}` and optionally `postsByTag={index.postsByTag}` with `showCounts`.
+
+== Next.js (App Router)
+
+[source,ts]
+----
+import { tagGenerateStaticParams, tagIdFromParams } from "@content-tags/next";
+
+export function generateStaticParams() {
+  return tagGenerateStaticParams(index);
+}
+----
