@@ -1,17 +1,17 @@
 <a id="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![License][license-shield]][license-url]
-
 <div align="center">
-  <h1>content-tags</h1>
-  <p>Hierarchical content tagging: taxonomy registry, Astro/Solid/React/Next adapters.</p>
-  <p>
+  <a href="https://github.com/dev-centr/content-tags/graphs/contributors"><img src="https://img.shields.io/github/contributors/dev-centr/content-tags.svg?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/dev-centr/content-tags/network/members"><img src="https://img.shields.io/github/forks/dev-centr/content-tags.svg?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/dev-centr/content-tags/stargazers"><img src="https://img.shields.io/github/stars/dev-centr/content-tags.svg?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/dev-centr/content-tags/issues"><img src="https://img.shields.io/github/issues/dev-centr/content-tags.svg?style=for-the-badge" alt="Issues"></a>
+  <a href="https://github.com/dev-centr/content-tags/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dev-centr/content-tags.svg?style=for-the-badge" alt="License"></a>
+
+  <h3 align="center">content-tags</h3>
+  <p align="center">
+    Hierarchical content tagging: taxonomy registry, Astro/Solid/React/Next adapters.
+    <br />
     <a href="https://github.com/dev-centr/content-tags/issues">Report Bug</a>
-    ·
+    &middot;
     <a href="https://github.com/dev-centr/content-tags/issues">Request Feature</a>
   </p>
 </div>
@@ -43,6 +43,8 @@ Site-owned taxonomy (JSON5 tree) + article frontmatter tag IDs → validated ind
 | `@content-tags/react` | `<TagList>`, `<TagTree>` |
 | `@content-tags/next` | App Router `generateStaticParams` helpers |
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Installation
 
 ```bash
@@ -51,32 +53,26 @@ pnpm build
 pnpm test
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Usage
 
 See `docs/` for the taxonomy format and framework integration.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## License
 
-MIT
-
-## Contact
-
-DevCentr.org - support@devcentr.org
-
-Project Link: https://github.com/dev-centr/content-tags
-
-Site: https://devcentr.org
+Distributed under the MIT License. See `LICENSE`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/dev-centr/content-tags.svg?style=for-the-badge
-[contributors-url]: https://github.com/dev-centr/content-tags/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/dev-centr/content-tags.svg?style=for-the-badge
-[forks-url]: https://github.com/dev-centr/content-tags/network/members
-[stars-shield]: https://img.shields.io/github/stars/dev-centr/content-tags.svg?style=for-the-badge
-[stars-url]: https://github.com/dev-centr/content-tags/stargazers
-[issues-shield]: https://img.shields.io/github/issues/dev-centr/content-tags.svg?style=for-the-badge
-[issues-url]: https://github.com/dev-centr/content-tags/issues
-[license-shield]: https://img.shields.io/github/license/dev-centr/content-tags.svg?style=for-the-badge
-[license-url]: https://github.com/dev-centr/content-tags/blob/main/LICENSE
+## Contact
+
+DevCentr.org — support@devcentr.org
+
+Project Link: [https://github.com/dev-centr/content-tags](https://github.com/dev-centr/content-tags)
+
+Site: [https://devcentr.org](https://devcentr.org)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
